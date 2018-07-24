@@ -1,0 +1,121 @@
+<!--
+  Generated template for the TdExperiencePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>TD Experience</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div style="padding-top: 1em">
+    <strong>EVENTS</strong>
+  </div>
+  <ion-row>
+    <ion-col>
+      <ion-row style="height:25px">
+        TD Toronto Jazz Festival 2018
+      </ion-row>
+      <ion-row>
+        <ion-card (click)="presentPopover($event, 'jazz')">
+          <img src="../../assets/imgs/TdExp/jazzEvent.jpg">
+        </ion-card>
+      </ion-row>
+    </ion-col>
+    <ion-col>
+      <ion-row style="height:25px">
+        Gorillaz: Humanz Tour~!
+      </ion-row>
+      <ion-row>
+        <ion-card (click)="presentPopover($event, 'gorillaz')">
+          <img src="../../assets/imgs/TdExp/gorillazEvent.jpg">
+        </ion-card>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+  <div>
+    <strong>CREDIT CARDS</strong>
+  </div>
+  <ion-row>
+    <ion-col>
+      <ion-row style="height:25px">
+        Cash Back Visa Infinite
+      </ion-row>
+      <ion-row>
+        <ion-card (click)="presentPopover($event, 'cb')">
+          <img src="../../assets/imgs/TdExp/cbcc.jpg">
+        </ion-card>
+      </ion-row>
+    </ion-col>
+    <ion-col>
+      <ion-row style="height:25px;">
+        Platinum Travel Visa
+      </ion-row>
+      <ion-row>
+        <ion-card (click)="presentPopover($event, 'pt')">
+          <img src="../../assets/imgs/TdExp/ptcc.jpg">
+        </ion-card>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+  <div>
+    <strong>L.O.C.</strong>
+  </div>
+  <ion-row>
+    <ion-col>
+        <ion-row style="height:25px;">
+            Personal Line of Credit
+          </ion-row>
+          <ion-row>
+            <ion-card (click)="presentPopover($event, 'ploc')">
+              <img src="../../assets/imgs/TdExp/ploc.jpg">
+            </ion-card>
+          </ion-row>
+    </ion-col>
+    <ion-col>
+        <ion-row style="height:25px;">
+            Student Line of Credit
+          </ion-row>
+          <ion-row>
+            <ion-card (click)="presentPopover($event, 'sloc')">
+              <img src="../../assets/imgs/TdExp/sloc.jpg">
+            </ion-card>
+          </ion-row>
+    </ion-col>
+  </ion-row>
+  <div>
+      <strong>Rewards</strong>
+    </div>
+    <ion-row>
+        <ion-col>
+            <ion-row style="height:25px;">
+                TD Rewards Points
+              </ion-row>
+              <ion-row style="height:150px">
+                <ion-card (click)="presentPopover($event, 'points')">
+                  <img src="../../assets/imgs/TdExp/points.png">
+                </ion-card>
+              </ion-row>
+        </ion-col>
+        <ion-col>
+            <ion-row style="height:25px;">
+                TD Aeroplan Points
+              </ion-row>
+              <ion-row style="height:150px">
+                <ion-card (click)="presentPopover($event, 'apoints')">
+                  <img src="../../assets/imgs/TdExp/apoints.jpg">
+                </ion-card>
+              </ion-row>
+        </ion-col>
+    </ion-row>
+
+</ion-content>

@@ -1,0 +1,47 @@
+page-dashboard {
+    .progress-outer{
+        margin:0;
+
+    }
+
+    .progress-inner{
+        margin:0;
+    }
+
+    progress-bar{
+        width:100%; 
+        margin:0;
+        height:42px;
+    }
+
+    ion-footer{
+        height:30px;
+        .footerItem{
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    progress-bar{
+            .dailyProgress .progress-outer{
+                margin:0;
+                height: 15px;
+                color: #f9b507;
+        
+            }
+        
+            .dailyProgress .progress-inner{
+                margin:0;
+                height: 7px;
+                color: #f9b507;
+            }
+
+    }
+
+    h3{
+        text-align: center;
+    }
+
+}

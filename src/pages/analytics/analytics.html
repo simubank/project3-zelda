@@ -1,0 +1,57 @@
+<!--
+  Generated template for the AnalyticsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>analytics</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div style="display: block">
+    <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType" (chartHover)="chartHovered($event)"
+      (chartClick)="chartClicked($event)"></canvas>
+  </div>
+
+  <div style="display: block; padding: 1em;">
+      <canvas baseChart
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [legend]="barChartLegend"
+              [chartType]="barChartType"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)"></canvas>
+    </div>
+
+  <h4 style="text-align: center; vertical-align: middle">Visa Transactions</h4>
+
+  <ion-grid>
+    <ion-row *ngFor="let transaction of visaToransactions; ">
+      <ion-card style="padding-left: 5px; padding-top: 10px; padding-bottom: 10px; margin-top: 0px; margin-bottom: 0px">
+        <ion-row>
+          <ion-col>
+            <ion-row align="left"> 
+              {{transaction.description}}
+            </ion-row>
+            <ion-row align="left">
+              {{transaction.originationDate}}
+            </ion-row>
+          </ion-col>
+          <ion-col align="right" style="padding:10px">
+            {{transaction.currencyAmount}}
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+</ion-content>

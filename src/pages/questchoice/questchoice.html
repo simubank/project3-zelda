@@ -1,0 +1,31 @@
+<!--
+  Generated template for the QuestchoicePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Quest Choices</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cards-bg">
+
+  <ion-list>
+    <ion-card *ngFor="let quest of questChoice$ | async" (click)="questClick($event, quest.content)">
+    <ion-card-content>
+      What is this quest?
+      <br>
+      {{quest.content}}
+      <br>
+      Gold: {{quest.gold}}
+      <br>
+      Experience: {{quest.experience}}
+      <br>
+      Penalty: {{quest.penalty}}
+    </ion-card-content>
+  </ion-card>
+  </ion-list>
+
+</ion-content>
